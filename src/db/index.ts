@@ -116,3 +116,16 @@ export async function loadWidgets(): Promise<WidgetConfig[]> {
   const db = await getDB();
   return db.getAll('widgets');
 }
+
+// ─── USER ──────────────────────────────────────────
+import { User } from '@/types';
+
+export async function saveUser(user: User) {
+  const db = await getDB();
+  await db.put('user', user, 'main');
+}
+
+export async function loadUser(): Promise<User | null> {
+  const db = await getDB();
+  return (await db.get('user', 'main')) || null;
+}
