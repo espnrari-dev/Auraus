@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root { font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body { @apply bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300; font-family: 'Inter', system-ui, sans-serif; }
+}
+@layer components {
+  .glass { @apply bg-white/70 dark:bg-dark-card/90 backdrop-blur-xs border border-white/20 dark:border-gray-700/30 shadow-lg; }
+  .card { @apply glass rounded-2xl p-4 transition-all hover:shadow-xl; }
+  .widget-drag { @apply cursor-grab active:cursor-grabbing; }
+}
