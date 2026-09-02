@@ -1,17 +1,31 @@
-# Auraus
+# AURA — Personal Dashboard You Can Trust
 
-## Description
-React frontend dashboard for Aura (Vite, Zustand, Tailwind).
+**AURA** is a private, offline‑first dashboard for your personal data — health, finances, habits, journal, and goals.
 
-## Technology Stack
-Node.js (React)
-
-## Main Entry
-src/main.tsx
+- **No cloud lock‑in.** Your data stays on your device.
+- **Beautiful by default.** Enterprise‑grade UI with dark/light modes.
+- **Reliable.** Full test suite and CI/CD.
+- **Open source.** Auditable and free.
 
 ## Quick Start
-- Start all services: `./start-all.sh`
-- Stop all services:  `./stop-all.sh`
 
-## Notes
-This repository is part of the [Aethel](https://github.com/espnrari-dev) ecosystem.
+```bash
+git clone https://github.com/yourusername/aura.git
+cd aura
+npm install
+npm run dev
+Visit http://localhost:5173.
+
+Stack
+
+· React + TypeScript
+· Vite
+· Tailwind CSS
+· Zustand (state)
+· IndexedDB (idb)
+· react-grid-layout (drag‑and‑drop)
+· Vitest + Playwright (testing)
+
+License
+
+MIT
