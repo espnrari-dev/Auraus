@@ -29,3 +29,16 @@ Stack
 License
 
 MIT
+
+## Reproduction for Strangers
+
+To reproduce the core functionality on a clean machine:
+
+\`\`\`bash
+git clone https://github.com/espnrari-dev/$repo
+cd $repo
+npm ci
+npm test
+\`\`\`
+
+All tests should PASS. If you encounter issues, please open an issue.
