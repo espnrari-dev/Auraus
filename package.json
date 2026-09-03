@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives",
+    "verify": "npm test"
   },
   "dependencies": {
     "idb": "^8.0.3",
