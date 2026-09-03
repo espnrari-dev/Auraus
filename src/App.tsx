@@ -5,6 +5,7 @@ function App() {
     <div className="App">
 <QRReplication />
 <SomaBus />
+<LooperPedal />
       <Notes />
     </div>
   );
